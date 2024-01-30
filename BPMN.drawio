@@ -1,0 +1,170 @@
+<mxfile host="Electron" modified="2024-01-19T08:28:31.142Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="lcLXOQYFYbUOZK9428yt" version="22.1.18" type="device">
+  <diagram name="Страница — 1" id="6iy9XoRKkgMYwToX5Y1h">
+    <mxGraphModel dx="1863" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-13" value="Добавление/редактирование данных о документах Клиента" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
+          <mxGeometry x="-610" y="550" width="970" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-35" value="Специалист" style="swimlane;html=1;startSize=20;horizontal=0;" parent="5LuZ33JDYAbEMqpk3Qwn-13" vertex="1">
+          <mxGeometry x="20" width="950" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-54" value="Получение данных о типах документов и полях" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="250" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-40" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="90" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https://fonts.googleapis.com/css?family=Architects+Daughter;fontSize=16;" parent="5LuZ33JDYAbEMqpk3Qwn-35" source="5LuZ33JDYAbEMqpk3Qwn-40" target="5LuZ33JDYAbEMqpk3Qwn-54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-59" value="Пользователь открывает вкладку &lt;br&gt;&quot;Документ, удостоверяющий&lt;br&gt;&amp;nbsp;личность клиента&quot;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="10" y="40" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-43" value="Типы документов &lt;br&gt;и поля есть в базе ?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="403" y="60" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-46" value="да" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="490" y="195" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" parent="5LuZ33JDYAbEMqpk3Qwn-35" source="5LuZ33JDYAbEMqpk3Qwn-42" target="5LuZ33JDYAbEMqpk3Qwn-88" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-42" value="?" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="460" y="110" width="46" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https://fonts.googleapis.com/css?family=Architects+Daughter;fontSize=16;" parent="5LuZ33JDYAbEMqpk3Qwn-35" source="5LuZ33JDYAbEMqpk3Qwn-54" target="5LuZ33JDYAbEMqpk3Qwn-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="5LuZ33JDYAbEMqpk3Qwn-35" source="5LuZ33JDYAbEMqpk3Qwn-50" target="5LuZ33JDYAbEMqpk3Qwn-57" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-50" value="Заполнение/редактирование данных в форме&amp;nbsp;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=user;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="423" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https://fonts.googleapis.com/css?family=Architects+Daughter;fontSize=16;" parent="5LuZ33JDYAbEMqpk3Qwn-35" source="5LuZ33JDYAbEMqpk3Qwn-42" target="5LuZ33JDYAbEMqpk3Qwn-50" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="483" y="270" />
+              <mxPoint x="483" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-57" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="700" y="275" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-88" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=catching;symbol=message;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="660" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-91" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&quot;Внесение документов невозможно.&lt;br&gt;Обратитесь в поддержку&quot;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="560" y="40" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-93" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="820" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" parent="5LuZ33JDYAbEMqpk3Qwn-35" source="5LuZ33JDYAbEMqpk3Qwn-88" target="5LuZ33JDYAbEMqpk3Qwn-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-95" value="нет" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="570" y="100" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-96" value="Пользватель &lt;br&gt;видит статус&lt;br&gt;&amp;nbsp;успешного &lt;br&gt;сохранения данных" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-35" vertex="1">
+          <mxGeometry x="660" y="205" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-97" value="Добавление/редактирование данных о документах Клиента" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
+          <mxGeometry x="-610" y="1050" width="1090" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-98" value="Бухгалтер" style="swimlane;html=1;startSize=20;horizontal=0;" parent="5LuZ33JDYAbEMqpk3Qwn-97" vertex="1">
+          <mxGeometry x="20" width="1070" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-99" value="Получение данных о типах документов и полях" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="250" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-100" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="90" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https://fonts.googleapis.com/css?family=Architects+Daughter;fontSize=16;" parent="5LuZ33JDYAbEMqpk3Qwn-98" source="5LuZ33JDYAbEMqpk3Qwn-100" target="5LuZ33JDYAbEMqpk3Qwn-99" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-102" value="Пользователь открывает вкладку &lt;br&gt;&quot;Документ, удостоверяющий&lt;br&gt;&amp;nbsp;личность клиента&quot;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="10" y="50" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-103" value="Типы документов &lt;br&gt;и поля есть в базе ?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="403" y="60" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-104" value="нет" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="480" y="175" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-106" value="?" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="460" y="110" width="46" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https://fonts.googleapis.com/css?family=Architects+Daughter;fontSize=16;" parent="5LuZ33JDYAbEMqpk3Qwn-98" source="5LuZ33JDYAbEMqpk3Qwn-99" target="5LuZ33JDYAbEMqpk3Qwn-106" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https://fonts.googleapis.com/css?family=Architects+Daughter;fontSize=16;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="5LuZ33JDYAbEMqpk3Qwn-98" source="5LuZ33JDYAbEMqpk3Qwn-109" target="5LuZ33JDYAbEMqpk3Qwn-118" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-109" value="Добавление типов документов и полей" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=user;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="423" y="225" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https://fonts.googleapis.com/css?family=Architects+Daughter;fontSize=16;" parent="5LuZ33JDYAbEMqpk3Qwn-98" source="5LuZ33JDYAbEMqpk3Qwn-106" target="5LuZ33JDYAbEMqpk3Qwn-109" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="483" y="270" />
+              <mxPoint x="483" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-116" value="да" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="540" y="100" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-118" value="Заполнение/редактирование данных документа в форме&amp;nbsp;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=user;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="760" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-130" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;fontColor=default;endArrow=classic;" parent="5LuZ33JDYAbEMqpk3Qwn-98" source="5LuZ33JDYAbEMqpk3Qwn-126" target="5LuZ33JDYAbEMqpk3Qwn-118" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-135" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;fontColor=default;endArrow=classic;entryX=1;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="5LuZ33JDYAbEMqpk3Qwn-98" source="5LuZ33JDYAbEMqpk3Qwn-126" target="5LuZ33JDYAbEMqpk3Qwn-109" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="623" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-126" value="?" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="600" y="110" width="46" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-127" value="Нужно редактировать/добавить&lt;br&gt;&amp;nbsp;типы документов и поля?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="540" y="60" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" parent="5LuZ33JDYAbEMqpk3Qwn-98" source="5LuZ33JDYAbEMqpk3Qwn-106" target="5LuZ33JDYAbEMqpk3Qwn-126" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-131" value="нет" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="680" y="100" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-132" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="960" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-133" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;fontColor=default;endArrow=classic;" parent="5LuZ33JDYAbEMqpk3Qwn-98" source="5LuZ33JDYAbEMqpk3Qwn-118" target="5LuZ33JDYAbEMqpk3Qwn-132" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-134" value="Пользватель &lt;br&gt;видит статус&lt;br&gt;&amp;nbsp;успешного &lt;br&gt;сохранения данных" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="920" y="30" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-136" value="да" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="5LuZ33JDYAbEMqpk3Qwn-98" vertex="1">
+          <mxGeometry x="620" y="190" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-122" value="Бизнес-процесс для пользователя с ролью &quot;специалист&quot;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;" parent="1" vertex="1">
+          <mxGeometry x="-395" y="503" width="510" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5LuZ33JDYAbEMqpk3Qwn-123" value="Бизнес-процесс для пользователя с ролью &quot;бухгалтер&quot;" style="text;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Architects Daughter;" parent="1" vertex="1">
+          <mxGeometry x="-320" y="1010" width="520" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
