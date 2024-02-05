@@ -1,0 +1,459 @@
+openapi: 3.0.3
+info:
+  title: Client's documents - OpenAPI спецификация
+  version: 0.0.1
+servers:
+ - url: https://documents.swagger.io/api/v3
+paths:
+  /clientDocs/docTypesDocFields/:
+   get:
+     summary: 6.1. Метод проверки наличия типов и полей документов
+     tags: 
+      - Documents
+     operationId: getTypesAndFields
+     responses:
+       '200':
+         description: Типы и поля документов найдены
+         content:
+           application/json:
+            schema: 
+             type: object
+             required: 
+               - code
+               - message
+             properties:
+               code:
+                 type: integer
+                 example: 200
+               message:
+                 type: string
+                 example: "Типы и поля документов найдены"
+       '400':
+          description: Запрос содержит ошибку
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error400"
+       '404':
+          description: Типы и поля документов не найдены
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error404"
+       '500':
+          description: Ошибка на сервере
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error500" 
+  /clientDocs/{clientId}/:   
+   get:
+     summary: 6.2. Метод получения списка документов Клиента
+     tags: 
+      - Documents
+     operationId: getAllDocuments
+     parameters: 
+      - name: clientId
+        in: path
+        required: true
+        description: Идентификатор Клиента
+        schema:
+          type: string
+        example: 1234
+     responses:
+       '200':
+         description: Успешный ответ со списком документов
+         content:
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/listOfDocuments"
+       '400':
+          description: Запрос содержит ошибку
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error400"
+       '404':
+          description: Документы не найдены
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error404"
+       '500':
+          description: Ошибка на сервере
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error500" 
+  /сlientDocs/{clientId}/{docId}:
+    get:
+     summary: 6.3. Метод получения одного документа по id
+     tags: 
+      - Documents
+     operationId: getOneDoc
+     parameters: 
+      - name: clientId
+        in: path
+        required: true
+        description: Идентификатор Клиента
+        schema:
+          type: string
+          example: 1234
+      - name: docId
+        in: path
+        required: true
+        description: Идентификатор документа
+        schema:
+          type: string
+          example: 567
+     responses:
+       '200':
+         description: Успешный ответ с данными документа
+         content:
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/oneDoc"
+       '400':
+          description: Запрос содержит ошибку
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error400"
+       '404':
+          description: Документ не найден
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error404"
+       '500':
+          description: Ошибка на сервере
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error500" 
+  /сlientDocs/{clientId}/save:
+    post:
+      summary: 6.4. Метод сохранения данных документа (добавление нового) 
+      tags: 
+       - Documents
+      operationId: createDoc
+      parameters: 
+      - name: clientId
+        in: path
+        required: true
+        description: Идентификатор Клиента
+        schema:
+          type: string
+          example: 1234
+      requestBody:
+       required: true
+       content:
+          application/json:
+            schema: 
+             type: object
+             required:
+              - clientId
+              - doc
+             properties:
+              clientId: 
+               type: integer
+               example: 1234
+              doc:
+               type: object
+               required:
+                 - docType
+                 - docFields
+               properties:
+                docType:
+                 type: integer
+                 example: 1
+                docFields:
+                 type: array
+                 items:
+                   type: object
+                   required: 
+                      - fieldId
+                   properties:
+                    fieldId:
+                      type: integer
+                      example: 4
+                    data:
+                      type: string
+                      example: 12.01.2002
+      responses:
+         '200':
+           description: Успешный ответ с данными документа
+           content:
+            application/json:
+             schema: 
+              $ref: "#/components/schemas/oneDoc"
+         '400':
+          description: Запрос содержит ошибку
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error400"
+         '500':
+          description: Ошибка на сервере
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error500"   
+ 
+  /сlientDocs/{clientId}/{docId}/update:
+    put:
+      summary: 6.5. Метод сохранения данных документа (обновление имеющегося) 
+      tags: 
+       - Documents
+      operationId: updateDoc
+      parameters: 
+      - name: clientId
+        in: path
+        required: true
+        description: Идентификатор Клиента
+        schema:
+          type: string
+          example: 1234
+      - name: docId
+        in: path
+        required: true
+        description: Идентификатор документа
+        schema:
+          type: string
+          example: 567
+      requestBody:
+       required: true
+       content:
+          application/json:
+            schema: 
+              $ref: "#/components/schemas/oneDoc"  
+      responses:
+       '200':
+         description: Успешный ответ с данными документа
+         content:
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/oneDoc"
+       '400':
+          description: Запрос содержит ошибку
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error400"
+       '500':
+          description: Ошибка на сервере
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error500"   
+  /сlientDocs/docTypes/:
+    get:
+     summary: 6.6. Метод получения списка типов документов 
+     tags: 
+      - Documents
+     operationId: getDocTypeList
+     responses: 
+       '200':
+         description: Успешный ответ со списком типов документов
+         content:
+           application/json:
+            schema:
+              type: object
+              required: 
+                - docNames
+              properties:
+                docNames: 
+                  type: array
+                  items:
+                    $ref: "#/components/schemas/docType"
+       '400':
+          description: Запрос содержит ошибку
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error400"
+       '404':
+          description: Типы документов не найдены
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error404"
+       '500':
+          description: Ошибка на сервере
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error500"
+  /сlientDocs/{docTypeId}/fields/:
+    get:
+      summary: 6.7. Метод получения списка полей документа по одному типу документа
+      tags: 
+        - Documents
+      operationId: getDocFieldList
+      parameters: 
+        - name: docTypeId
+          in: path
+          required: true
+          description: Идентификатор типа документа
+          schema:
+            type: string
+            example: 567
+      responses: 
+        '200':
+          description: Успешный ответ со списком полей докмента
+          content:
+           application/json:
+            schema: 
+             type: object
+             required: 
+                - docTypeId
+                - docFields
+             properties:
+                docTypeId: 
+                  type: integer
+                  example: 1
+                docFields:
+                   type: array
+                   items:
+                     $ref: "#/components/schemas/docField"
+        '400':
+          description: Запрос содержит ошибку
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error400"
+        '404':
+          description: Поля документа не найдены
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error404"
+        '500':
+          description: Ошибка на сервере
+          content: 
+           application/json:
+            schema: 
+             $ref: "#/components/schemas/error500"       
+           
+components:
+  schemas:
+    docField:
+      type: object
+      required: 
+       - fieldId
+       - fieldName
+      properties:
+        fieldId:
+          type: integer
+          example: 4
+        fieldName: 
+          type: string
+          example: 'дата выдачи'
+        data:
+          type: string
+          example: 12.01.2002
+         
+    oneDoc:
+      type: object
+      required:
+       - clientId
+       - doc
+      properties:
+        clientId: 
+          type: integer
+          example: 1234
+        doc:
+          type: object
+          required:
+          - docType
+          - docId
+          - DocFields
+          properties:
+            docType:
+              type: integer
+              example: 1
+            docId:
+              type: integer
+              example: 567
+            docFields:
+              type: array
+              items: 
+                $ref: "#/components/schemas/docField"
+      
+    listOfDocuments:
+      type: object
+      required: 
+       - clientId
+       - docs
+      properties:
+        clientId: 
+          type: integer
+          example: 1234
+        docs: 
+          type: array
+          items:
+           $ref: "#/components/schemas/oneDoc"
+      
+    docType:
+        type: object
+        required: 
+          - docTypeId
+          - docTypeName
+        properties:
+         docTypeId:
+           type: integer
+           example: 1
+         docTypeName: 
+           type: string
+           example: 'Паспорт гражданина РФ'
+ 
+    error400:
+      type: object
+      required: 
+       - code
+       - message
+      properties:
+        code:
+          type: integer
+          example: 400
+        message:
+          type: string
+          example: "Ошибка в запросе"
+          
+    error404:
+      type: object
+      required: 
+       - code
+       - message
+      properties:
+        code:
+          type: integer
+          example: 404
+        message:
+          type: string
+          example: "Документы не найдены"
+    
+    error500:
+      type: object
+      required: 
+       - code
+       - message
+      properties:
+        code:
+          type: integer
+          example: 404
+        message:
+          type: string
+          example: "Сервер не отвечает"     
+          
+          
+            
+            
+          
+          
+          
+    
+           
+     
+                 
+  
